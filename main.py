@@ -76,9 +76,9 @@ parser.add_argument('--warmup-epochs', type=int, default=10, help='number of war
 # parser.add_argument('--warmup-epochs', type=int, default=1, help='number of warmup epochs')
 parser.add_argument('--num-epochs', type=int, default=500, help='maximum number of epochs')
 # parameters related to data and masks
-parser.add_argument('--train-path', type=str, default='./data/PD_train_852(71).npz', help='path of training data')
-parser.add_argument('--val-path', type=str, default='./data/PD_val_252(21).npz', help='path of validation data')
-parser.add_argument('--test-path', type=str, default='./data/PD_test_252(21).npz', help='path of test data')
+parser.add_argument('--train-path', type=str, default='./home/liuchun/Desktop/my_data/sig_PD_train_852(71).npz', help='path of training data')
+parser.add_argument('--val-path', type=str, default='./home/liuchun/Desktop/my_data/sig_PD_val_252(21).npz', help='path of validation data')
+parser.add_argument('--test-path', type=str, default='./home/liuchun/Desktop/my_data/sig_PD_test_252(21).npz', help='path of test data')
 #改变了数据集路径      u_mask_path
 '''different mask of baseine center big or small  vd=big p=small'''
 # parser.add_argument('--u-mask-path', '-select_mask', type=str, default='c', help='undersampling mask')
@@ -112,7 +112,7 @@ baseline:原始模拟欠采和划分mask都是用手动固定的内容
 parser.add_argument('--slope','-s', type=float,  default=5, help='the first param of loupe')
 parser.add_argument('--sample_slope','-ss', type=float,  default=200, help='the second param of loupe')
  
-print('new branch!')########################
+# print('new branch!')########################
 
 # bili_0=0.0#为了记录每训练一个轮次 得到的mask数值
 # bili_1=0.0
